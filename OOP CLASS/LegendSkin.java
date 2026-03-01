@@ -1,14 +1,16 @@
-class LegendSkin {
-    private String skinName;
-    private int diamondCost;
-    
-    public LegendSkin(String name, int cost) {
-    this.skinName = name;
-    this.diamondCost = cost;
-}
+import java.util.Scanner;
 
-    public void displayDetails() {
-        System.out.println("Skin: " + skinName);
-        System.out.println("Cost: " + diamondCost);
+class LegendSkin {
+    private String skinname;
+    private int skincost;
+    
+    public LegendSkin(String name, int cost){
+        this.skinname = name;
+        this.skincost = cost;
+    }
+        
+    public void displaydetails(){
+        System.out.println("\nSkin: " + skinname);
+        System.out.println("Cost: " + skincost);        
     }
 }

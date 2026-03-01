@@ -1,9 +1,20 @@
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args){
-        LegendSkin skin1 = new LegendSkin("Gusion", 10000);
-        LegendSkin skin2 = new LegendSkin("Miya", 9000);
+    public static void main (String[] args) {
         
-        skin1.displayDetails();
-        skin2.displayDetails();
+        Scanner input = new Scanner (System.in);
+        
+        System.out.print("Enter a new skin: ");
+        String name = input.nextLine();
+        
+        System.out.print("Enter skin price: ");
+        int cost = input.nextInt();        
+        
+        LegendSkin Skin1 = new LegendSkin(name, cost);
+
+        
+        Skin1.displaydetails();
+
     }
 }
